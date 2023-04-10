@@ -20,11 +20,23 @@ for (i = 0; i < acc.length; i++) {
 var swiper = new Swiper('.swiper', {
     slidesPerView: 3,
     direction: getDirection(),
+
+    // Зацикливаем бесконечную прокрутку нашего слайдера
+    loop: true,
+    
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+      
     },
 
+    // Буллеты, текущее положение, прогрессбар
+    pagination: {
+      el: '.swiper-pagination',
+      // Буллеты
+      clickable: true,
+      
+    },
 
 
     on: {
@@ -43,42 +55,42 @@ var swiper = new Swiper('.swiper', {
 
 // Задаем логику переключения нашим dots-ам
 
-const image = document.querySelectorAll('.swiper-slide')
-const sliderWay = document.querySelector('.swiper-wrapper')
-const linkPrev = document.querySelector('.swiper-button-prev');
-const linkNext = document.querySelector('.swiper-button-next');
-const dots = document.querySelector('.dots');
-const dotsItem = document.querySelectorAll('.dot')
+// const image = document.querySelectorAll('.swiper-slide')
+// const sliderWay = document.querySelector('.swiper-wrapper')
+// const linkPrev = document.querySelector('.swiper-button-prev');
+// const linkNext = document.querySelector('.swiper-button-next');
+// const dots = document.querySelector('.dots');
+// const dotsItem = document.querySelectorAll('.dot')
 
-let count = 0;
+// let count = 0;
 
-let width = document.querySelector('.swiper').offsetWidth;
+// let width = document.querySelector('.swiper').offsetWidth;
 
-linkPrev.addEventListener('click', () => {
-    count--;
-    if(count < 0){
-      count = image.length - 1;
-    }
-    rollSlide()
-  })
+// linkPrev.addEventListener('click', () => {
+//     count--;
+//     if(count < 0){
+//       count = image.length - 1;
+//     }
+//     rollSlide()
+//   })
   
-  linkNext.addEventListener('click', () => {
-    count++;
-    if(count >= image.length){
-      count = 0;
-    }
-    rollSlide()
+//   linkNext.addEventListener('click', () => {
+//     count++;
+//     if(count >= image.length){
+//       count = 0;
+//     }
+//     rollSlide()
   
-  })
+//   })
   
-  function rollSlide() {
-    sliderWay.style.transform = 'translate(-' + count * width + 'px)';
-    dotsItem.forEach(item => {
-      item.classList.remove('activ');
-    })
-    if(sliderWay + 1){
-      dotsItem.forEach(item => {
-      item.classList.add('activ');
-    })
-    }
-  }
+//   function rollSlide() {
+//     sliderWay.style.transform = 'translate(-' + count * width + 'px)';
+//     dotsItem.forEach(item => {
+//       item.classList.remove('activ');
+//     })
+//     if(sliderWay + 1){
+//       dotsItem.forEach(item => {
+//       item.classList.add('activ');
+//     })
+//     }
+//   }

@@ -231,7 +231,7 @@ input.search:after {
     padding: 20px 0;
 }
 
-.dot {
+/* .dot {
     display: block;
     height: 10px;
     width: 10px;
@@ -245,6 +245,25 @@ input.search:after {
     box-shadow: 0px 0px 10px #000000;
 }
 
+.not-active {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px #000000;
+} */
+
+.swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+    background-color: #C4C4C4;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #A7A7A7;
+    box-shadow: 0px 0px 10px #000000;  
+}
 dot:last-child {
     margin-right: 0;
 }
