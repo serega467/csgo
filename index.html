@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="nav-menu">
+                <ul class="nav-menu__items">
+                    <li class="nav-menu__item"><a href="#" class="menu-link menu-link--active">BLOG</a></li>
+                    <li class="nav-menu__item"><a href="#" class="menu-link">UPDATES</a></li>
+                    <li class="nav-menu__item"><a href="#" class="menu-link">RESOURCES</a></li>
+                    <li class="nav-menu__item"><a href="#" class="menu-link">COMMUNITY</a></li>
+                </ul>
+                <div class="nav-lang">
+                    <div class="search">
+                        <form class="form-search">
+                            <input type="text" name="text" class="search" placeholder="">
+                            <img class="search-glass" src="./images/search.png" alt="">
+                        </form>
+                    </div>
+                    <button class="accordion">English</button>
+                    <div class="panel">
+                        <p>Русский</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="info-user">
+            <div class="container">
+                <div class="info-static">
+                    <h1 class="quantity-user">20,943,843 </h1>
+                    <p class="text">UNIQUE PLAYERS LAST MONTH</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="slider-games">
+            <div class="container">
+                <div class="info-games">
+                    <h2 class="slider-text"> Major Updates</h2>
+                </div>
+                 <!-- Swiper -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./images/slide-1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/slide-2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/slide-3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/slide-1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/slide-2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/slide-3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/slide-1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/slide-2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/slide-3.jpg" alt=""></div>
+                    </div>
+                    
+                    <!-- Добавляем dots нашему слайдеру -->
+                    <div class="dots">
+                        <a class="dot activ" href="#"></a>
+                        <a class="dot" href="#"></a>
+                        <a class="dot" href="#"></a>
+                        <a class="dot" href="#"></a>
+                        <a class="dot" href="#"></a>
+                      </div>
+                      
+                     <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    
+    
+</body>
+
+</html>
