@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +22,10 @@
     <header class="header">
         <div class="container">
             <div class="nav-menu">
-                <ul class="nav-menu__items">
-                    <li class="nav-menu__item"><a href="#" class="menu-link menu-link--active">BLOG</a></li>
+                <ul class="nav-menu__items" id="menu">
+                    <li class="nav-menu__item"><a href="#" class="menu-link">BLOG</a></li>
                     <li class="nav-menu__item"><a href="#" class="menu-link">UPDATES</a></li>
-                    <li class="nav-menu__item"><a href="#" class="menu-link">RESOURCES</a></li>
+                    <li class="nav-menu__item"><a href="#" class="menu-link menu-link--active">RESOURCES</a></li>
                     <li class="nav-menu__item"><a href="#" class="menu-link">COMMUNITY</a></li>
                 </ul>
                 <div class="nav-lang">
@@ -34,7 +37,7 @@
                     </div>
                     <button class="accordion">English</button>
                     <div class="panel">
-                        <p>Русский</p>
+                        <p class="panel-ru">Русский</p>
                     </div>
                 </div>
             </div>
@@ -58,20 +61,20 @@
                 <div class="info-games">
                     <h2 class="slider-text"> Major Updates</h2>
                 </div>
-                 <!-- Swiper -->
+                <!-- Swiper -->
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="./images/slide-1.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="./images/slide-2.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="./images/slide-3.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="./images/slide-1.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="./images/slide-2.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="./images/slide-3.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="./images/slide-1.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="./images/slide-2.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="./images/slide-3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/slide-1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/slide-2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/slide-3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/slide-1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/slide-2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/slide-3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/slide-1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/slide-2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/slide-3.png" alt=""></div>
                     </div>
-                    
+
                     <!-- Добавляем dots нашему слайдеру -->
                     <div class="dots">
                         <a class="dot activ" href="#"></a>
@@ -79,21 +82,140 @@
                         <a class="dot" href="#"></a>
                         <a class="dot" href="#"></a>
                         <a class="dot" href="#"></a>
-                      </div>
-                      <!-- Пагинация для слайдера -->
-                      <div class="swiper-pagination"></div>
-                     <!-- Add Navigation -->
+                    </div>
+                    <!-- Пагинация для слайдера -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                  </div>
-                
+                </div>
+
             </div>
         </div>
     </section>
+
+    <section class="champion">
+        <div class="container-champ">
+            <div class="champ-info">
+                <h2 class="champ-info__title">The stage is set in Antwerp</h2>
+                <div class="date-label">
+                    <p class="champ-info__date">2022.05.18 -</p>
+                    <img src="./images/cs-tag.png" alt="CS" class="cs-label">
+                </div>
+                <div class="champ-about">
+                    <div class="foto-champ">
+                        <img class="champ-img" src="./images/champ-2.jpg" alt="Champions">
+                        <p class="champ-text">with team and player autograph stickers. 50% of the proceeds go to the players, teams, and organizations <br>
+                             participating in the 2022 Antwerp Major.
+                        <div class="social-link">
+                            <ul class="link-items link-items__champ">
+                                <li class="link-item" href="#">Tweet</li>
+                                <li class="link-item" href="#">Like</li>
+                                <li class="link-item" href="#">Reddits this</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-champ">
+                        <p class="champ-text">
+                            The Legends stage was a brutal test, but eight teams survived and earned their place on the main stage. Congratulations to Team Spirit, ENCE, Copenhagen Flames, FaZe, FURIA, Heroic, Natus Vincere, and Ninjas in Pyjamas. They’ll play out the rest of this event in front of the roaring crowds in Antwerp. Best of luck to all! <br>
+
+                            Matches start Thursday, so you still have a few hours to make your picks in the Pick’Em Challenge. Earn souvenir tokens (or purchase some more), and support for your favorite teams
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <section class="champion">
+        <div class="container-champ">
+            <div class="champ-info">
+                <h2 class="champ-info__title">PGL Antwerp 2022 Champions!</h2>
+                <div class="date-label">
+                    <p class="champ-info__date">2022.05.21 -</p>
+                    <img src="./images/cs-tag.png" alt="CS" class="cs-label">
+                </div>
+                <div class="champ-about">
+                    <div class="foto-champ">
+                        <img class="champ-img" src="./images/champ.jpg" alt="Champions">
+                        <p class="champ-text">players and organizations taking part in the Major. <br>
+                            <br>  
+                            <span class="rio">And so the Antwerp Major comes to a close. Onward, to Rio!</span></p>
+                            <br>
+                        <div class="social-link">
+                            <ul class="link-items">
+                                <li class="link-item" href="#">Tweet</li>
+                                <li class="link-item" href="#">Like</li>
+                                <li class="link-item" href="#">Reddits this</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-champ">
+                        <p class="champ-text">
+                            This weekend, thousands of screaming fans in Antwerp and millions of viewers around the
+                            world witnessed the crowning of a new Major Champion. Congratulations to FaZe Clan who
+                            proved to be an unstoppable force, taking the Grand Final 2-0.
+
+                            Today we’re releasing the champions autograph capsule, featuring autograph stickers in
+                            paper, glitter, holo, and gold. Celebrate rain, karrigan, broky, ropz, and Twistzz by
+                            supporting them in style–50% of the proceeds are shared with the
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container container-champ">
+            <div class="footer-info">
+                <div class="footer-info__text">CS GO very <br> popular games </div>
+                <div class="footer-info__link">
+                    <ul class="link-items">
+                        <li class="link-item" href="#">
+                            <a href="#">
+                                <img src="./images/soc-link-1.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="link-item" href="#">
+                            <a href="#">
+                                <img src="./images/soc-link-2.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="link-item" href="#">
+                            <a href="#">
+                                <img src="./images/soc-link-3.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="link-item" href="#">
+                            <a href="#">
+                                <img src="./images/soc-link-4.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="link-item" href="#">
+                            <a href="#">
+                                <img src="./images/soc-link-5.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-info__link-connect"></div>
+            </div>
+        </div>
+    </footer>
+    
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
     <script src="./js/index.js"></script>
-    
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
 </body>
 
 </html>
